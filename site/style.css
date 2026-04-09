@@ -1,0 +1,24 @@
+:root {
+    --fg: #222;
+    --bg: #fafafa;
+    --accent: #305C68;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 640px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+h1 { color: var(--accent); }
+a { color: var(--accent); }
