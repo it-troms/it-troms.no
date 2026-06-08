@@ -1,0 +1,5 @@
+# Old WordPress URLs -> new static pages (Netlify)
+/dette-gjor-vi/    /dette-gjor-vi.html    301
+/bli-med/          /bli-med.html          301
+/om-oss/           /om-oss.html           301
+/medlemmer/        /medlemmer.html        301
