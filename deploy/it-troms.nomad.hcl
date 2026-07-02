@@ -18,7 +18,7 @@ job "it-troms" {
       driver = "docker"
 
       config {
-        image = "ghcr.io/it-troms/it-troms.no:latest"
+        image = "ghcr.io/it-troms/it-troms.no:${image_tag}"
         force_pull = true
         ports = ["http"]
       }
