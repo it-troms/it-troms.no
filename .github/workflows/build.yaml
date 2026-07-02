@@ -43,4 +43,4 @@ jobs:
           NOMAD_ADDR: ${{ secrets.NOMAD_ADDR }}
           NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
         run: |
-          nomad job run deploy/it-troms.nomad.hcl
+          nomad job run -var="image_tag=${GITHUB_SHA}" deploy/it-troms.nomad.hcl
