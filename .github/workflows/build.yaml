@@ -30,3 +30,15 @@ jobs:
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:${{ github.sha }}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-nomad@v2
+      - name: Deploy
+        env:
+          NOMAD_ADDR: ${{ secrets.NOMAD_ADDR }}
+          NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
+        run: |
+          nomad job run deploy/it-troms.nomad.hcl
