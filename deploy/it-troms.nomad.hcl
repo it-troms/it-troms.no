@@ -1,3 +1,8 @@
+variable "image_tag" {
+  type    = string
+  default = "latest"
+}
+
 job "it-troms" {
   namespace = "itft"
   datacenters = ["dc1"]
