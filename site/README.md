@@ -7,7 +7,7 @@ En moderne, statisk HTML-versjon av it-troms.no som erstatning for den gamle Wor
 ```
 .
 ├── index.html            # Forside
-├── dette-gjor-vi.html    # Dette gjør vi (med kontaktskjema)
+├── dette-gjor-vi.html    # Dette gjør vi
 ├── bli-med.html          # Bli med (priser + medlemsfordeler)
 ├── om-oss.html           # Om oss (formål + styret)
 ├── medlemmer.html        # Medlemmer
@@ -19,7 +19,7 @@ En moderne, statisk HTML-versjon av it-troms.no som erstatning for den gamle Wor
 └── assets/
     ├── css/style.css
     ├── js/main.js        # Mobilmeny
-    └── img/logo.svg      # Plassholder-logo (bytt ut med egen)
+    └── img/logo.png      # Logo (brukes også som favicon)
 ```
 
 ## Forhåndsvis lokalt
@@ -51,7 +51,7 @@ Merk: `_redirects` virker **ikke** på GitHub Pages.
 
 ## Slik bytter du ut logoen
 
-Legg din egen logo i `assets/img/` og oppdater `<img class="logo-mark" ...>` i toppen av hver HTML-side (og `favicon`-lenken). En kvadratisk SVG eller PNG passer best.
+Legg din egen logo i `assets/img/` og oppdater `<img class="brand-logo" ...>` i toppen av hver HTML-side (og `favicon`-lenken). En kvadratisk SVG eller PNG passer best.
 
 ## Oppdatere innhold
 
